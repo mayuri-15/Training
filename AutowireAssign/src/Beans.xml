@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   <!-- BYTYPE -->
+   <!--<bean id="cBean" class="College" autowire="byType">
+   <property name="name" value="LNCT"></property>
+    <property name="reg" value="10"></property>
+    
+   </bean>
+   
+    <bean id="sBean" class="Student">
+   <property name="sname" value="Alis"></property>
+    <property name="sage" value="20"></property>
+   </bean>
+   
+   
+    <bean id="tBean" class="Teacher">
+   <property name="tname" value="deepti"></property>
+    <property name="tid" value="30"></property>
+   </bean>
+   -->
+   <!-- BYNAME -->
+   <bean id="cBean" class="College" autowire="byName">
+   <property name="name" value="LNCT"></property>
+    <property name="reg" value="10"></property>
+    
+   </bean>
+   
+    <bean id="sob" class="Student">
+   <property name="sname" value="Alis"></property>
+    <property name="sage" value="20"></property>
+   </bean>
+   
+   
+    <bean id="tob" class="Teacher">
+   <property name="tname" value="deepti"></property>
+    <property name="tid" value="30"></property>
+   </bean>
+   
+   
+   </beans>

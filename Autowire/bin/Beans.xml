@@ -1,0 +1,69 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   
+<!-- BYNAME -->
+  <!--  <bean id= "proBean" class = "Product" autowire="byName">
+   <property name="pcode" value="121"></property>
+   <property name="pname" value="TV"></property>
+   <property name="price" value="234"></property>
+  <constructor-arg index="0" value="Alis"></constructor-arg>
+   <constructor-arg index="1" value="22"></constructor-arg>
+   <constructor-arg index="2" value="Pune"></constructor-arg>
+  
+   </bean>
+     <bean id= "sob" class = "Supplier">
+        <property name="sname" value="ABC"></property>
+   <property name="sadd" value="Pune"></property>
+   <property name="mobile" value="586589658"></property></bean>
+   -->
+   
+   
+  <!-- BYCONSTRUCTOR -->
+  <!--   <bean id= "proBean" class = "Product" autowire="constructor">
+   <constructor-arg index="0" value="121"></constructor-arg>
+   <constructor-arg index="1" value="TV"></constructor-arg>
+   <constructor-arg index="2" value="234"></constructor-arg>
+  
+  </bean>
+   
+   <bean id= "sob" class = "Supplier">
+   <property name="sname" value="ABC"></property>
+   <property name="sadd" value="Pune"></property>
+   <property name="mobile" value="586589658"></property>
+   </bean>-->
+  
+  <!-- BYTYPE -->
+   <!-- <bean id= "proBean" class = "Product" autowire="byType">
+   <constructor-arg index="0" value="121"></constructor-arg>
+   <constructor-arg index="1" value="TV"></constructor-arg>
+   <constructor-arg index="2" value="234"></constructor-arg>
+  
+  </bean>
+  
+  <bean id= "sBean" class = "Supplier">
+   <property name="sname" value="ABC"></property>
+   <property name="sadd" value="Pune"></property>
+   <property name="mobile" value="586589658"></property>
+
+   </bean> -->
+   
+   <!--<bean id ="sob" class="project.Supplier">
+		<property name="sname" value ="arya"></property>
+		<property name="sadd" value ="bhopal"></property>
+		<property name="mobile" value ="9075648790"></property>
+	</bean>
+	
+	<bean id ="prosBean" class ="project.Product" autowire= "byType">
+		<property name="pcode"><value>001</value></property>
+		<property name="pname"><value>icard</value></property>
+		<property name="price"><value>100</value></property>	
+		<property name="sob" ref ="sob"></property>
+	</bean> 
+ -->
+   
+   </beans>

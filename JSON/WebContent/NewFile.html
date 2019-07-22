@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript - read JSON from URL</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <div class="mypanel"></div>
+        <script>
+        $.getJSON('JSON.json' ,function(data){
+       var text= `Date: ${data.date}<br>
+                  Time: ${data.time}<br>
+                  Unix Time: ${data.milliseconds_since_epoch}`
+           $(".mypanel").html(text);
+        }
+    );     
+        </script>
+    </body>
+</html>

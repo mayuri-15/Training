@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="cBean" class="College">
+   <property name="name" value="LNCT"></property>
+    <property name="reg" value="10"></property>
+     <property name="sob">
+     <list>
+     <ref bean="s1"></ref>
+        <ref bean="s2"></ref>
+     </list></property>
+     <property name="tob">
+     <set>
+     <ref bean="t1"></ref>
+      <ref bean="t2"></ref>
+     </set></property>
+   </bean>
+   
+    <bean id="s1" class="Student">
+   <property name="sname" value="Alis"></property>
+    <property name="sage" value="20"></property>
+   </bean>
+      <bean id="s2" class="Student">
+   <property name="sname" value="Morgan"></property>
+    <property name="sage" value="22"></property>
+   </bean> 
+    <bean id="t1" class="Teacher">
+   <property name="tname" value="deepti"></property>
+    <property name="tid" value="121"></property>
+   </bean>
+   
+   <bean id="t2" class="Teacher">
+   <property name="tname" value="riya"></property>
+    <property name="tid" value="122"></property>
+   </bean>
+   </beans>
